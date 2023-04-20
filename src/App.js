@@ -37,13 +37,11 @@ function QuoteBox(){
                     qURL:jsonResponse.originator.url
                 })
 
-                // setQuote(jsonResponse.content);
-                // setAuthor(jsonResponse.originator.name);
-                // setQURL(jsonResponse.originator.url);
+            
             } )
             .catch(err => console.warn(err));
             
-            // .catch(err => console.error(err))
+            
 
     }
         
@@ -68,7 +66,7 @@ function Socials(){
     return(
         <div>
           <a className="socialLink" id="tweet-quote" href="http://www.twitter.com/intent/tweet"><i class="fab fa-twitter"></i>
-             {/*<FontAwesomeIcon icon={faTwitter} />*/} 
+             
           </a>
 
           
@@ -101,7 +99,7 @@ function NewQuote(props){
     return(
         <div id="new-quote">
             
-            <button onClick={props.onClick}  >New Quote {/*<FontAwesomeIcon icon={faArrowRotateRight} /> */} 
+            <button onClick={props.onClick}  >New Quote
         </button>
         </div>
     )
