@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:url('https://i.imgur.com/4U3cBxk.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App{
+width: 80vw;
+  justify-self:center;
+  box-sizing:border-box;
+  padding:5%;
+  background-color:rgba(255, 182, 193, 0.613);
+  border-radius:15px;
+  max-height:100vh;
+  text-align:center;
+
+}
+
+#text h2{
+   max-height:60vh;
+  overflow:auto;
+  color:white;
+  text-shadow:0 0 5px black;
+  transition:2s;
+  font-family:'Edu VIC WA NT Beginner', cursive;
+  scrollbar-color:lightslategrey pink;
+  scrollbar-width:thin;
+  padding:5px;
+  
+}
+
+h3{
+   font-family:'Edu VIC WA NT Beginner', cursive;
+  
+}
+
+#quote-box{
+  margin:25px;
+ 
+  
+}
+#quote-box::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+
+.socialLink{
+  font-size:2em;
+  padding:5px;
+}
+
+.socialLink:hover{
+  color:indigo;
+}
+
+.socialLink:hover::after{
+  content:'tweet'
+}
+
+#author a{
+  text-decoration:none;
+  color:lightslategray;
+  text-shadow:1px 0px 0px black,0px 1px 0px black,0px 0px 1px black;
+}
+
+#author a:hover{
+  text-decoration:underline;
+}
+
+#Acknowledgement{
+  color:white;
+}
+
+#Acknowledgement:hover{
+  color:black;
+}
+
+#new-quote button{
+  background-color:lightslategrey;
+  color:white;
+  border:none;
+  padding:2%;
+  border-radius:10px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#new-quote button:hover{
+  background-color:slategrey;
+  cursor:pointer;
+  box-shadow:0px 1px 0px palegoldenrod;
+  color:palegoldenrod;
+  
 }
