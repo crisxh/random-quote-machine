@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## This project was originally created as a project from the FreeCodeCamp
 
+you can see the github pages link [here](https://crisxh.github.io/random-quote-machine/)
+
 It was originally built in codepen so I could more easily run it through the tests on the FreeCodeCamp. In codepen the development environment was different than if I were building it locally using create react app. 
 
 This repository is the same code but moved into the structure of a CRA App. 
